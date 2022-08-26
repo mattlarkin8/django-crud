@@ -1,6 +1,6 @@
-# **LAB - Class 28**
+# **LAB - Class 29**
 
-## **Project: Django CRUD**
+## **Project: Django CRUD with Style**
 
 ### Author: Matthew Larkin
 
