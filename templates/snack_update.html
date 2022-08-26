@@ -2,11 +2,11 @@
 
 {% block content %}
 
-<h1>Update Snack</h1>
-<form method="POST">
+<h1 class="ml-2 my-2 text-2xl font-bold ">Update Snack</h1>
+<form method="POST" class="ml-2 text-lg font-bold space-y-2">
     {% csrf_token %}
     {{ form.as_p }}
-    <input type="submit" value="SAVE">
+    <input type="submit" value="SAVE" class="bg-gray-400 px-1 ml-5 font-normal">
 </form>
 
 {% endblock content %}

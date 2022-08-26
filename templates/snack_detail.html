@@ -1,12 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <div class="mt-2">
+    <a class="mx-2 px-1 bg-gray-300" href="{% url 'snack_create' %}">+ Create Snack</a>
+    <a class="mx-2 px-1 bg-gray-300" href="{% url 'snack_update' snack.pk %}">+ Update Snack</a>
+    <a class="mx-2 px-1 bg-gray-300" href="{% url 'snack_delete' snack.pk %}">- Delete Snack</a>
+    </div>
+    <h2 class="text-3xl ml-3 my-1 ">Details about {{ snack.title }}</h2>
+    <h2 class="text-xl ml-3 my-2">Purchaser: {{ snack.purchaser }}</h2>
+    <p class="text-xl ml-3 my-2">{{ snack.description }}</p>
 
-    <h2>Details about {{ snack.title }}</h2>
-    <h2>Purchaser: {{ snack.purchaser }}</h2>
-    <p>{{ snack.description }}</p>
-    <a href="{% url 'snack_create' %}">+ Create Snack</a>
-    <a href="{% url 'snack_update' snack.pk %}">+ Update Snack</a>
-    <a href="{% url 'snack_delete' snack.pk %}">- Delete Snack</a>
 
 {% endblock content %}

@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <script src="https://cdn.tailwindcss.com"></script>
         <title>Snacks CRUD</title>
     </head>
-    <body>
-        <header>
-            <a href="{% url 'snack_list' %}">Home</a>
+    <body class="bg-gray-500 text-gray-800">
+        <header class="my-1">
+            <a href="{% url 'snack_list' %}" class="text-lg ml-2 px-1 bg-gray-400 underline">Home</a>
         </header>
         <main>
             {% block content %}

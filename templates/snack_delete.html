@@ -2,12 +2,12 @@
 
 {% block content %}
 
-<h1>Delete Snack</h1>
+<h1 class="text-3xl font-bold mx-3 mt-2">Delete Snack</h1>
 
-<form method="POST">
+<form method="POST" class="text-lg font-bold mx-3 my-2">
     {% csrf_token %}
     <p>Are you sure you want to delete "{{ snack.title }}"?</p>
-    <input type="submit" value="OK">
+    <input type="submit" value="OK" class="px-1 bg-gray-400 mt-2 ml-2">
 </form>
 
 {% endblock content %}
